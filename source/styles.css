@@ -1,0 +1,197 @@
+
+
+.navbar a {
+    color: #FAFAFA !important;
+}
+
+
+.footer {
+    background-color: #202020 !important;
+}
+
+
+.row {
+    justify-content: space-around;
+}
+
+
+i:hover {
+    color: rgb(150, 150, 150);
+}
+
+
+.title-container {
+    margin: 2rem;
+}
+
+
+.title-container h1 {
+    font-size: 3em;
+}
+
+
+
+.personal-picture {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 3rem;
+}
+
+
+.personal-picture img {
+    max-width: 100%;
+    width: 25vw;
+    height: auto;
+}
+
+
+.container-box {
+    display: flex;
+    background-color: #F5F5F5;
+    margin: auto;
+    margin-top: 10vh;
+    width: 75vw;
+    height: 75vh;
+    border-radius: 100px;
+    justify-content: space-between;
+}
+
+
+.about-container {
+    margin-top: 3rem;
+}
+
+
+.projects-container {
+    display: flex;
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+}
+
+
+
+.projects-box {
+    flex-grow: 1;
+}
+
+
+
+
+/* Responsividade */
+
+
+@media (min-width: 576px) {
+
+
+    .container-box {
+        text-align: center;
+        flex-direction: column;
+        width: 80vw;
+        height: 50vh;
+    }
+
+
+    .personal-picture {
+        justify-content: center;
+    }
+
+    
+    .personal-picture img {
+        position: absolute;
+        max-width: 25%;
+        width: 25vw;
+        height: auto;
+    }
+
+
+}
+
+
+@media (min-width: 768px) {
+
+
+    .container-box {
+        text-align: center;
+        flex-direction: column;
+        width: 80vw;
+        height: 55vh;
+    }
+
+
+    .personal-picture img {
+        position: absolute;
+        max-width: 30%;
+        width: 25vw;
+        height: auto;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+
+
+    .container-box {
+        text-align: center;
+        flex-direction: column;
+        width: 80vw;
+        height: 60vh;
+    }
+
+
+    .title-container h1 {
+        font-size: 3em;
+
+    }
+
+
+    .personal-picture img {
+        position: absolute;
+        max-width: 25%;
+        width: 25vw;
+        height: auto;
+    }
+
+    
+}
+
+
+@media (min-width: 1200px) {
+
+
+    .container-box {
+        text-align: left;
+        flex-direction: row;
+        width: 90vw;
+        height: 80vh;
+
+    }
+
+
+    .title-container {
+        width: 100%;
+
+    }
+
+
+    .title-container h1 {
+        font-size: 4em;
+
+    }
+
+
+    .personal-picture img {
+        position: relative;
+        max-width: 80%;
+        width: 80vw;
+        height: auto;
+    }
+
+
+}
+
+
+@media (min-width: 1400px) {
+    
+}
