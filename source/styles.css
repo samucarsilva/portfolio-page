@@ -1,22 +1,42 @@
 
 
-.navbar a {
+body {
+    background-color: white;
+}
+
+
+/* Header Container */
+
+
+.navbar {
+    background-color: #121416 !important;
+}
+
+
+.navbar li a {
     color: #FAFAFA !important;
 }
 
 
-.footer {
-    background-color: #202020 !important;
+.navbar-nav a:hover {
+    color: #969696 !important;
 }
 
 
-.row {
-    justify-content: space-around;
-}
 
 
-i:hover {
-    color: rgb(150, 150, 150);
+/* Main Container */
+
+
+.hero-section {
+    display: flex;
+    background-color: #F5F5F5;
+    margin: auto;
+    margin-top: 10vh;
+    width: 75vw;
+    height: 75vh;
+    border-radius: 100px;
+    justify-content: space-between;
 }
 
 
@@ -26,9 +46,8 @@ i:hover {
 
 
 .title-container h1 {
-    font-size: 3em;
+    font-size: 1.5em;
 }
-
 
 
 .personal-picture {
@@ -45,36 +64,70 @@ i:hover {
 }
 
 
-.container-box {
-    display: flex;
-    background-color: #F5F5F5;
-    margin: auto;
-    margin-top: 10vh;
-    width: 75vw;
-    height: 75vh;
-    border-radius: 100px;
-    justify-content: space-between;
-}
-
-
 .about-container {
     margin-top: 3rem;
 }
 
 
-.projects-container {
-    display: flex;
-    text-align: center;
-    margin: 3rem 0 3rem 0;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: absolute;
+    background-color: rgba(50, 50, 50, 0.5);
+    width: 25%;
+    height: 10%;
+    border-radius: 25%;
+    margin: 1rem;
 }
 
 
-
-.projects-box {
-    flex-grow: 1;
+.carousel-control-next-icon {
+    right: 0;
 }
 
 
+.carousel-control-prev-icon {
+    left: 0;
+}
+
+
+.link-styles {
+    color: #212529;
+    text-decoration: none;
+}
+
+
+.form-container h1 {
+    font-weight: 700;
+}
+
+
+#submit-button input {
+    background-color: #121416;
+}
+
+
+/* Footer Container */
+
+
+.footer-container {
+    background-color: #121416;
+    width: 100%;
+}
+
+
+.footer-container .row {
+    justify-content: space-around !important;
+}
+
+
+.social-links i:hover {
+    color: #969696;
+}
+
+
+.footer-container a:hover {
+    color: #969696 !important;
+}
 
 
 /* Responsividade */
@@ -83,7 +136,7 @@ i:hover {
 @media (min-width: 576px) {
 
 
-    .container-box {
+    .hero-section {
         text-align: center;
         flex-direction: column;
         width: 80vw;
@@ -110,7 +163,7 @@ i:hover {
 @media (min-width: 768px) {
 
 
-    .container-box {
+    .hero-section {
         text-align: center;
         flex-direction: column;
         width: 80vw;
@@ -132,7 +185,7 @@ i:hover {
 @media (min-width: 992px) {
 
 
-    .container-box {
+    .hero-section {
         text-align: center;
         flex-direction: column;
         width: 80vw;
@@ -160,7 +213,7 @@ i:hover {
 @media (min-width: 1200px) {
 
 
-    .container-box {
+    .hero-section {
         text-align: left;
         flex-direction: row;
         width: 90vw;
