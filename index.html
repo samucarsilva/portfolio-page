@@ -40,6 +40,10 @@
                             <a class="nav-link" href="#about-details"> Sobre </a>
                         </li>
 
+                         <li class="nav-item">
+                            <a class="nav-link" href="#personal-projects"> Projetos </a>
+                        </li>
+
                     </ul>
 
                 </div>
@@ -55,7 +59,7 @@
 
         <section class="container-fluid pt-5">
 
-            <div class="container-box">
+            <div class="hero-section">
 
                 <div class="title-container">
                     <h1> Samuel Resende </h1>
@@ -84,35 +88,94 @@
         </section>
 
 
-        <section class="container-fluid pt-5" id="personal-abilities">
 
-             <div class="abilities-container">
-                <h1> Habilidades </h1>
+        <section class="container-fluid pt-5" id="personal-projects">
+                <h1> Meus Projetos </h1>
                 <p>  </p>
+            <div class="container-fluid pb-5">
+
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item text-center active">
+                            <a class="link-styles" href="https://github.com/samucarsilva/badlands-game"> <h1> BadLands Game </h1> </a>
+                            <p> Um dos meus primeiros projetos de games desenvolvidos em JAVA </p>
+                            <img src="assets/badlands-project.png" class="d-block w-100" alt="">
+                        </div>
+
+                        <div class="carousel-item text-center">
+                            <a class="link-styles" href="https://github.com/samucarsilva/challenges-Web"> <h1> Team Fortress II </h1> </a>
+                            <img src="assets/teamfortress-project.png" class="d-block w-100" alt="">
+                        </div>
+
+                        <div class="carousel-item text-center">
+                            <a class="link-styles" href="https://github.com/samucarsilva/challenges-Web"> <h1> Login Forms </h1> </a>
+                            <img src="assets/forms-project.png" class="d-block w-100" alt="">
+                        </div>
+
+                    </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"> Anterior </span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"> Próximo </span>
+                        </button>
+
+                </div>
+
             </div>
 
         </section>
 
 
-        <section class="container-fluid pt-5" id="personal-projects">
-                <h1> Meus Projetos </h1>
-                <p>  </p>
-            <div class="projects-container">
+        <section class="container-fluid bg-dark p-lg-5 text-white" id="contact-form">
+
+            <form method="POST">
+
+                <div class="form-container">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-5">
+                            <h1 class="display-3"> Deixe Uma Mensagem </h1>
+                        </div>
+
+                        <div class="col-md-5">
+
+                            <div id="user-name">
+                                <label for="user-name"> </label>
+                                <input class="form-control p-3 rounded-3" type="text" name="user-name" placeholder="Seu Nome">
+                            </div>
 
 
-                <div class="container">
-                    <p> A </p>
+                            <div id="user-email">
+                                <label for="user-email"> </label>
+                                <input class="form-control p-3 rounded-3" type="email" name="user-email" placeholder="Seu E-Mail" required>
+                            </div>
+
+
+                            <div id="user-message">
+                                <label for="user-message"> </label>
+                                <textarea class="form-control p-3 rounded-3" name="user-message" placeholder="Sua Mensagem" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="d-grid" id="submit-button">
+                                <input class="btn btn-lg text-uppercase mt-4 rounded-3 text-white bg-yellow" type="submit" value="Enviar" ></button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="container">
-                   <p> B </p>
-                </div>
-
-                <div class="container">
-                    <p> C </p>
-                </div>
-
-            </div>
+            </form>
 
         </section>
 
@@ -121,7 +184,7 @@
     </main>
 
 
-    <footer class="footer text-light mt-auto py-5">
+    <footer class="footer-container text-light mt-auto py-5">
 
         <div class="container-fluid">
 
@@ -171,7 +234,11 @@
                                 </li>
 
                                 <li>
-                                    <a class="text-decoration-none text-white" href="#"> Sobre </a>
+                                    <a class="text-decoration-none text-white" href="#about-details"> Sobre </a>
+                                </li>
+
+                                <li>
+                                    <a class="text-decoration-none text-white" href="#personal-projects"> Projetos </a>
                                 </li>
 
                             </ul>
