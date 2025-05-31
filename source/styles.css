@@ -1,7 +1,9 @@
 
 
 body {
-    background-color: white;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -23,30 +25,36 @@ body {
 }
 
 
-
-
 /* Main Container */
 
 
 .hero-section {
     display: flex;
+    flex-direction: column;
     background-color: #F5F5F5;
-    margin: auto;
-    margin-top: 10vh;
-    width: 75vw;
-    height: 75vh;
-    border-radius: 100px;
+    margin: 10vh auto;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
     justify-content: space-between;
 }
 
 
 .title-container {
-    margin: 2rem;
+    width: auto;
+    text-align: center;
+    margin: 2rem 2rem 0 2rem;
+    height: auto;
 }
 
 
 .title-container h1 {
-    font-size: 1.5em;
+    font-size: 1.75em;
+}
+
+
+.title-container p {
+    font-size: 1em;
 }
 
 
@@ -58,9 +66,8 @@ body {
 
 
 .personal-picture img {
-    max-width: 100%;
-    width: 25vw;
-    height: auto;
+    margin: auto;
+    width: 60%;
 }
 
 
@@ -96,13 +103,21 @@ body {
 }
 
 
+.form-container {
+    text-align: center;
+
+}
+
+
 .form-container h1 {
+    padding-top: 3rem;
     font-weight: 700;
 }
 
 
 #submit-button input {
     background-color: #121416;
+    margin-bottom: 3rem;
 }
 
 
@@ -116,7 +131,13 @@ body {
 
 
 .footer-container .row {
-    justify-content: space-around !important;
+    flex-direction: column;
+}
+
+
+.social-links {
+    padding-top: 1rem;
+
 }
 
 
@@ -138,9 +159,7 @@ body {
 
     .hero-section {
         text-align: center;
-        flex-direction: column;
-        width: 80vw;
-        height: 50vh;
+        height: 75vh;
     }
 
 
@@ -151,8 +170,7 @@ body {
     
     .personal-picture img {
         position: absolute;
-        max-width: 25%;
-        width: 25vw;
+        width: 35%;
         height: auto;
     }
 
@@ -164,18 +182,52 @@ body {
 
 
     .hero-section {
-        text-align: center;
-        flex-direction: column;
-        width: 80vw;
-        height: 55vh;
+        flex-direction: row;
+        height: 75vh;
+    }
+
+
+    .title-container {
+        width: 100%;
+    }
+
+
+    .title-container h1 {
+        text-align: left;
+        font-size: 3em;
+    }
+
+
+    .title-container p {
+        text-align: left;
+    }
+
+
+    .personal-picture {
+        width: 50%;
     }
 
 
     .personal-picture img {
-        position: absolute;
-        max-width: 30%;
-        width: 25vw;
+        max-width: 40%;
+        width: 30%;
         height: auto;
+    }
+
+    
+    .form-container {
+        padding-top: 3rem;
+        text-align: left;
+    }
+
+
+    .form-container h1 {
+        padding-top: 0;
+    }
+
+
+    .footer-container .row {
+        flex-direction: row;
     }
 
 
@@ -185,9 +237,13 @@ body {
 @media (min-width: 992px) {
 
 
+    body {
+        font-size: 1em;
+    }
+
+
     .hero-section {
         text-align: center;
-        flex-direction: column;
         width: 80vw;
         height: 60vh;
     }
@@ -200,17 +256,26 @@ body {
 
 
     .personal-picture img {
-        position: absolute;
-        max-width: 25%;
-        width: 25vw;
+        
+        width: 35%;
         height: auto;
     }
 
-    
+
+    .form-container {
+        padding-top: 0;
+    }
+
+
 }
 
 
 @media (min-width: 1200px) {
+
+
+    body {
+        font-size: 1em;
+    }
 
 
     .hero-section {
@@ -224,21 +289,17 @@ body {
 
     .title-container {
         width: 100%;
-
     }
 
 
-    .title-container h1 {
-        font-size: 4em;
-
+    .title-container {
+        font-size: 1.25rem;
     }
 
 
     .personal-picture img {
-        position: relative;
-        max-width: 80%;
+        max-width: 30%;
         width: 80vw;
-        height: auto;
     }
 
 
@@ -246,5 +307,9 @@ body {
 
 
 @media (min-width: 1400px) {
+
+    body {
+        font-size: 1.5em;
+    }
     
 }
