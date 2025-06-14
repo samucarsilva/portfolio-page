@@ -14,7 +14,7 @@
 <body>
 
 
-    <header class="mb-5">
+    <header id="portfolio-header">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center fixed-top p-4">
 
@@ -55,28 +55,24 @@
     </header>
 
 
-    <main>
+    <main id="portfolio-main">
 
-        <section class="container-fluid pt-5">
+        <section class="hero-section container-fluid">
 
-            <div class="hero-section">
+            <div class="title-section">
+                <h1 class="title-container"> Samuel Resende </h1>
+                <p class="subtitle-container"> Técnico em Informática </p>
+            </div>
+            
 
-                <div class="title-container">
-                    <h1> Samuel Resende </h1>
-                    <p> Técnico em Informática </p>
-                </div>
-                
-    
-                <div class="personal-picture">
-                    <img src="assets/goodvibes.png" alt="Foto de Samuel em um universo paralelo">
-                </div>
-
+            <div class="personal-picture">
+                <img src="assets/goodvibes.png" alt="Foto de Samuel em um universo paralelo">
             </div>
 
         </section>
     
 
-        <section class="container-fluid" id="about-details">
+        <section id="about-section" class="container-fluid">
 
             <div class="about-container">
                 <h2> Sobre Mim </h2>
@@ -89,42 +85,49 @@
 
 
 
-        <section class="container-fluid pt-5" id="personal-projects">
+        <section id="projects-section" class="container-fluid">
                 <h2> Meus Projetos </h2>
                 <p>  </p>
-            <div class="container-fluid pt-5 pb-5">
+            <div class="container-fluid pt-5">
 
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide">
 
                     <div class="carousel-inner">
 
                         <div class="carousel-item text-center active">
                             <a class="link-styles" href="https://github.com/samucarsilva/badlands-game" target="_blank"> <h3> BadLands Game </h3> </a>
                             <p> Um dos meus primeiros projetos de games desenvolvidos em JAVA </p>
-                            <img src="assets/badlands-project.png" class="d-block w-100" alt="">
+                            <img src="assets/badlands-project.png" class="d-block" alt="">
                         </div>
+
 
                         <div class="carousel-item text-center">
                             <a class="link-styles" href="https://github.com/samucarsilva/challenges-Web" target="_blank"> <h3> Team Fortress II </h3> </a>
-                            <img src="assets/teamfortress-project.png" class="d-block w-100" alt="">
+                            <img src="assets/teamfortress-project.png" class="d-block" alt="">
                         </div>
+
 
                         <div class="carousel-item text-center">
                             <a class="link-styles" href="https://github.com/samucarsilva/challenges-Web" target="_blank"> <h3> Login Forms </h3> </a>
-                            <img src="assets/forms-project.png" class="d-block w-100" alt="">
+                            <img src="assets/forms-project.png" class="d-block" alt="">
                         </div>
 
-                    </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
                             <span class="visually-hidden"> Anterior </span>
-                        </button>
+                            </button>
 
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden"> Próximo </span>
-                        </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+                                <span class="visually-hidden"> Próximo </span>
+                            </button>
+                        </div>
+                        
+
+                    </div>
 
                 </div>
 
